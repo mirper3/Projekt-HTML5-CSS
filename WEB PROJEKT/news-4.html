@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Peti Oblak - Website</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Peti Oblak - Website">
+        <meta name="keywords" content="cybersecurity, network, firewall, antivirus">
+        <meta name="author" content="Miroslav Perić">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="homepage-image"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <style>
+            .float-img {
+                float: right;
+                clear: right;
+                margin-left: 10px;
+                margin-bottom;
+                5px;
+                border: solid black 1px;
+                padding: 2px;
+            }
+        </style>
+        <main>
+            <h1>NEWS</h1>
+            <hr>
+            <div class="news">
+                <h2>4 major browsers are getting hit in widespread malware attacks</h2>
+                <p class="description">Chrome, Firefox, Edge, and Yandex are all affected in widespread ad-injection campaign.</p>
+                <img src="news/news2.jpg" width="280" height="240"
+                     alt="web" title="web"
+                     class=".float-img" />
+                <p>
+                <p>An ongoing malware campaign is blasting the Internet with malware that neuters the security of Web browsers, adds malicious browser extensions, and makes other changes to users’ computers, Microsoft said on Thursday.</p>
+                <p>Adrozek, as the software maker has dubbed the malware family, relies on a sprawling distribution network comprising 159 unique domains with each one hosting an average of 17,300 unique URLs. The URLs, in turn, host an average of 15,300 unique malware samples. The campaign began no later than May and hit a peak in August, when the malware was observed on 30,000 devices per day.</p>
+                <p class="description">Not your father’s affiliate scam</p>
+                <p>
+                    The attack works against the Chrome, Firefox, Edge, and Yandex browsers, and it remains ongoing. The end goal for now is to inject ads into search results so the attackers can collect fees from affiliates.
+                    While these types of campaigns are common and represent less of a threat than many types of malware, Adrozek stands out because of malicious modifications it makes to security settings and other malicious actions it performs.
+                </p>
+                <p>
+                    “Cybercriminals abusing affiliate programs is not new—browser modifiers are some of the oldest types of threats,” researchers from the Microsoft 365 Defender Research Team wrote in a
+                    <a href="https://www.microsoft.com/security/blog/2020/12/10/widespread-malware-campaign-seeks-to-silently-inject-ads-into-search-results-affects-multiple-browsers/?ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-_WLxMAzHSAwkekkbkqUPOQ&epi=TnL5HPStwNw-_WLxMAzHSAwkekkbkqUPOQ&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__jwuznp2mgwkftg2yxka03fe3c22xsqzw2kiduzb000%29%287593%29%281243925%29%28TnL5HPStwNw-_WLxMAzHSAwkekkbkqUPOQ%29%28%29&irclickid=_jwuznp2mgwkftg2yxka03fe3c22xsqzw2kiduzb000">blog post.</a>
+                    “However, the fact that this campaign utilizes a piece of malware that affects multiple browsers is an indication of how this threat type continues to be increasingly sophisticated. In addition, the malware maintains persistence and exfiltrates website credentials, exposing affected devices to additional risks.”
+                </p>
+                <p>
+                    The post said that Adrozek is installed “through drive-by download.” Installer file names use the format of setup__.exe. Attackers drop a file in the Windows temporary folder, and this file in turn drops the main payload in the program files directory. This payload uses a file name that makes the malware appear to be legitimate audio-related software, with names such as Audiolava.exe, QuickAudio.exe, and converter.exe.
+                    The malware is installed the way legitimate software is and can be accessed through Settings>Apps & Features and is registered as a Windows service with the same file name.
+                </p>             
+                <p>
+                    Once installed, Adrozek makes several changes to the browser and the system it runs on. On Chrome, for instance, the malware often makes changes to the Chrome Media Router service.
+                    The purpose is to install extensions that masquerade as legitimate ones by using IDs such as “Radioplayer.”
+                </p>
+                <p class="description">Bad extensions!</p>
+                <p>
+                    The extensions connect to the attacker’s server to fetch additional code that injects ads into search results. The extensions also send the attackers information about the infected computer, and on Firefox, it also attempts to steal credentials. The malware goes on to tamper with certain DLL files. On Edge, for instance, the malware modifies MsEdge.dll so that it turns off security controls that help detect unauthorized changes to the Secure Preferences file.
+
+                </p>
+                <p>This technique, and similar ones for other affected browsers, has potentially serious consequences. Among other things, the Preferences File checks the integrity of values of various files and settings.
+                By nullifying this check, Adrozek opens browsers up to other attacks. The malware also adds new permissions to the file.</p>
+                <p>The malware then makes changes to the system settings to ensure it runs each time the browser is restarted or the computer is rebooted. 
+                From that point on, Adrozek will inject ads that either accompany ads served by a search engine or are placed on top of them.</p>
+                <p>Thursday’s post doesn’t explicitly say what, if any, user interaction is required for infections to occur. 
+                It’s also not clear what effect defenses like User Account Control have. Microsoft makes no mention of the attack hitting browsers running macOS or Linux, so it's likely this campaign affects only 
+                Windows users. Microsoft representatives didn’t respond to an email asking for details.</p>
+                <p>The campaign uses a technique called polymorphism to blast out hundreds of thousands of unique samples. That makes signature-based antivirus protection ineffective.
+                Many AV offerings—Microsoft Defender included—have behavior-based, machine-learning-powered detections that are more effective against such malware.</p>
+
+                <p>Source : <a href="https://arstechnica.com/information-technology/2020/12/ongoing-malware-attacks-are-hitting-users-of-4-major-browsers/">https://arstechnica.com/information-technology/2020/12/ongoing-malware-attacks-are-hitting-users-of-4-major-browsers/</a></p>
+                <p><a href="news.html">Back to news</a></p>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2020 Miroslav Perić</p>
+        </footer>
+    </body>
+</html>

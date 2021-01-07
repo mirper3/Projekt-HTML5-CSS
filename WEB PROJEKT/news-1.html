@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Peti Oblak - Website</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Peti Oblak - Website">
+    <meta name="keywords" content="cybersecurity, network, firewall, antivirus">
+    <meta name="author" content="Miroslav Perić">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="homepage-image"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .float-img {
+            float: right;
+            clear: right;
+            margin-left: 10px;
+            margin-bottom;
+            5px;
+            border: solid black 1px;
+            padding: 2px;
+        }
+    </style>
+    <main>
+        <h1>NEWS</h1>
+        <div id="news_gallery">
+        </div>
+        <hr>
+        <div class="news">
+            <h2>What is next-generation firewall?</h2>
+
+            <img src="news/news5-1.jpg" width="520" height="300"
+                 alt="web" title="web"
+                 class=".float-img" />
+            <p class="description">A next-generation firewall (NGFW)</p>
+            <p>
+                is a part of the third generation of firewall technology, combining a traditional firewall with other network device filtering functions, such as an application
+                firewall using in-line deep packet inspection (DPI), an intrusion prevention system (IPS). Other techniques might also be employed, such as TLS/SSL encrypted traffic inspection,
+                website filtering, QoS/bandwidth management, antivirus inspection and third-party identity management integration (i.e. LDAP, RADIUS, Active Directory).
+            <p class="description">Next-generation firewall vs. traditional firewall</p>
+            <p>
+                NGFWs include the typical functions of traditional firewalls such as packet filtering, network- and port-address translation (NAT), stateful inspection,
+                and virtual private network (VPN) support. The goal of next-generation firewalls is to include more layers of the OSI model, improving filtering of network traffic that is
+                dependent on the packet contents.
+
+                NGFWs perform deeper inspection compared to stateful inspection performed by the first- and second-generation firewalls. NGFWs use a more thorough inspection style,
+                checking packet payloads and matching signatures for harmful activities such as exploitable attacks and malware.
+            </p>
+            <p class="description">Evolution of next-generation firewalls</p>
+            <p>
+                Improved detection of encrypted applications and intrusion prevention service. Modern threats like web-based malware attacks, targeted attacks, application-layer attacks, and more have had a significantly n
+                egative effect on the threat landscape. In fact, more than 80% of all new malware and intrusion attempts are exploiting weaknesses in applications, as opposed to weaknesses in networking components and services.
+
+                Stateful firewalls with simple packet filtering capabilities were efficient blocking unwanted applications as most applications met the port-protocol expectations. Administrators could promptly 
+                prevent an unsafe application from being accessed by users by blocking the associated ports and protocols. But blocking a web application that uses port 80 by closing the port would also mean complications with the entire HTTP protocol.
+
+                Protection based on ports, protocols, IP addresses is no more reliable and viable. This has led to the development of identity-based security approach, which takes organizations a step ahead of 
+                conventional security appliances which bind security to IP-addresses.
+
+                NGFWs offer administrators a deeper awareness of and control over individual applications, along with deeper inspection capabilities by the firewall. Administrators can create very granular "
+                allow/deny" rules for controlling use of websites and applications in the network.
+            </p>
+            </div>
+            <p>Source:<a href="https://en.wikipedia.org/wiki/Next-generation_firewall">https://en.wikipedia.org/wiki/Next-generation_firewall</a></p>
+            <p><a href="news.html">Back to news</a></p>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2020 Miroslav Perić/p>
+    </footer>
+</body>
+</html>
